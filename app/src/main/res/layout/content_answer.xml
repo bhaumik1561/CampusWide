@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_answer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bhaum.dditconnect.answer"
+    tools:showIn="@layout/activity_answer">
+
+    <!-- android:background="?attr/selectableItemBackgroundBorderless" will cause this Custom View to make ripple effect -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:orientation="vertical"
+        android:layout_weight="12"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/pro"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/profile"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="65dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+               android:id="@+id/question"
+                />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ansname"
+                android:textColor="#0000ff"
+                android:text="23212323213"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/anstime"
+                android:textSize="11dp"
+                android:textStyle="italic"
+                android:gravity="right"
+                android:text="329923892"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="@color/colorAccent">
+
+</View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="vertical"
+            android:id="@+id/chatlistline">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/mycont">
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/textfieldbk"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="0dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+                android:weightSum="5">
+
+
+
+                <AutoCompleteTextView
+                    android:layout_width="0dp"
+
+                    android:ems="10"
+                    android:id="@+id/ans"
+                    android:layout_weight="4.3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:padding="10dp"
+                    android:lines="8"
+                    android:minLines="1"
+                    android:gravity="top|left"
+                    android:maxLines="10"
+                    android:layout_height="wrap_content"
+                    android:hint="Your Answer...."
+                    android:textColor="#120b0b"
+                    android:textColorHint="#848181"
+
+                    android:textColorHighlight="@color/colorPrimaryDark" />
+
+
+
+
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight=".7"
+                    android:maxHeight="45dp"
+                    android:text=""
+                    android:id="@+id/send"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/ic_send_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

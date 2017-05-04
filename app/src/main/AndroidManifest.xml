@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bhaum.dditconnect">
+
+ <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/finallogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".Myapp"
+        android:theme="@style/AppTheme"
+
+        >
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Signup" />
+        <service android:name=".mynotifications"
+            android:enabled="true"
+            android:exported="true"/>
+
+
+        <activity
+            android:name=".home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
+        <activity
+            android:name=".userprofile"
+            android:label="@string/title_activity_userprofile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".documents"
+            android:label="@string/title_activity_documents"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".login" />
+        <activity
+            android:name=".answer"
+            android:label="@string/title_activity_answer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".chatScreen"
+            android:label="@string/title_activity_chat_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".documentspost"
+            android:label="@string/title_activity_documentspost"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

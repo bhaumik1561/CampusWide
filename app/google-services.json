@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1003498185523",
+    "firebase_url": "https://dditconnect.firebaseio.com",
+    "project_id": "dditconnect",
+    "storage_bucket": "dditconnect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003498185523:android:886cef5a7ac1b591",
+        "android_client_info": {
+          "package_name": "com.example.bhaum.dditconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003498185523-hvnrdpnhbfl8e3ricquqlhvdnhic40n8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bhaum.dditconnect",
+            "certificate_hash": "2c97789dce310a31cb16fe49ee5af32e955e0344"
+          }
+        },
+        {
+          "client_id": "1003498185523-lrmeeft46nd9ido6aju2dcko3j1i50gd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdiOaEM0snzhfCtT2N047sqXi9SoQ-a_k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003498185523-lrmeeft46nd9ido6aju2dcko3j1i50gd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
